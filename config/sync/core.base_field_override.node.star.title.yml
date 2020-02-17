@@ -1,0 +1,18 @@
+uuid: c3ec2ce8-541d-4d12-8518-30f4f0769a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.star
+id: node.star.title
+field_name: title
+entity_type: node
+bundle: star
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

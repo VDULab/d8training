@@ -1,0 +1,14 @@
+uuid: fc6d0f89-ea25-4e3a-ae3c-0a60404439a3
+name: 'D8 Training'
+mail: vdu@vdu.it
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,33 @@
+uuid: 799b4c25-608f-4551-a75f-b3b1dcea83de
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.starring
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__starring_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:starring-block_1'
+settings:
+  id: 'views_block:starring-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      movie: movie
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

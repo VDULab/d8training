@@ -1,0 +1,29 @@
+uuid: 955f5b29-13a5-41e1-a36e-0738bfc455f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_starring
+    - node.type.movie
+    - node.type.star
+id: node.movie.field_starring
+field_name: field_starring
+entity_type: node
+bundle: movie
+label: Starring
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      star: star
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

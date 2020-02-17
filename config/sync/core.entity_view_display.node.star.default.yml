@@ -1,0 +1,28 @@
+uuid: 69a67c1f-2ce2-42cf-8766-3b48e4f0e8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.star.body
+    - node.type.star
+  module:
+    - text
+    - user
+id: node.star.default
+targetEntityType: node
+bundle: star
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
