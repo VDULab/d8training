@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.star.body
+    - field.field.node.star.field_star_image
+    - image.style.thumbnail
     - node.type.star
   module:
+    - image
     - path
     - text
 id: node.star.default
@@ -29,6 +32,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_star_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   path:
     type: path
     weight: 30
