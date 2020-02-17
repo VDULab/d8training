@@ -1,0 +1,31 @@
+uuid: 1dfdc2c6-abac-4fb3-ae97-f111c087895e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.oscar.field_anno
+    - taxonomy.vocabulary.oscar
+  module:
+    - text
+id: taxonomy_term.oscar.default
+targetEntityType: taxonomy_term
+bundle: oscar
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_anno:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.star.body
+    - field.field.node.star.field_oscar
     - node.type.star
   module:
     - path
@@ -29,6 +30,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_oscar:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 30

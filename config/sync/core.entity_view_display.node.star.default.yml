@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.star.body
+    - field.field.node.star.field_oscar
     - node.type.star
   module:
     - text
@@ -19,6 +20,14 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_oscar:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100
