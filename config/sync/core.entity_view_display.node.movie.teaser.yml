@@ -34,8 +34,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_genre: true
   field_director: true
+  field_genre: true
   field_plot: true
   field_poster: true
   field_starring: true

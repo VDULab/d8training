@@ -30,6 +30,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_star_image:
     weight: 102
     label: hidden
