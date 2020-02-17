@@ -1,0 +1,23 @@
+uuid: 73dd747c-65be-4964-8b89-efa25bf1e453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_anno
+    - taxonomy.vocabulary.oscar
+id: taxonomy_term.oscar.field_anno
+field_name: field_anno
+entity_type: taxonomy_term
+bundle: oscar
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1950
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
