@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.movie.field_plot
     - field.field.node.movie.field_poster
     - field.field.node.movie.field_starring
+    - field.field.node.movie.field_year
     - node.type.movie
   module:
     - text
@@ -34,3 +35,4 @@ hidden:
   field_plot: true
   field_poster: true
   field_starring: true
+  field_year: true
