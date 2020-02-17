@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.movie.body
+    - field.field.node.movie.field_director
     - field.field.node.movie.field_plot
     - field.field.node.movie.field_poster
     - field.field.node.movie.field_starring
+    - field.field.node.movie.field_year
     - image.style.thumbnail
     - node.type.movie
   module:
@@ -34,6 +36,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_director:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_plot:
     weight: 122
     settings:
@@ -61,6 +73,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_year:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   path:
     type: path
